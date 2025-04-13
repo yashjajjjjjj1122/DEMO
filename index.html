@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        background-color: black;
+        color: whitesmoke;
+        gap: 15px;
+        font-weight: 700px;
+        margin-top: 10px;
+        margin-left: 400px;
+        margin-right: 500px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: 5px solid red;
+      }
+      body {
+        background-color: aquamarine;
+
+        height: 100vh;
+        margin: 0px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        color: blanchedalmond;
+        padding: 5px;
+        margin: 20px auto;
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-top: 200px;
+        padding: 50px;
+        border: 12px solid black;
+        max-width: 400px;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>WELCOME TO DEMO WEBSITE</nav>
+    </header>
+    <main>
+      <form action="/submit" method="post">
+        <label for="Name"> Name</label>
+        <input
+          type="text"
+          id="Name"
+          name="name"
+          placeholder="Enter Your Name"
+          required
+        />
+        <label for="Password">Password</label>
+        <input
+          type="password"
+          id="Password"
+          placeholder="Enter Your Password"
+          required
+        />
+        <button type="submit">Login </button>
+      </form>
+    </main>
+    <footer>All Rights Reserved 2025</footer>
+  </body>
+</html>
